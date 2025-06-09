@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - MSCIT Student</title>
+    
+    <!-- Preload Critical Resources -->
+    <link rel="preload" href="./assets/css/style.css" as="style">
+    <link rel="preload" href="./assets/js/script.js" as="script">
+    
+    <!-- Preconnect to External Domains -->
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="preconnect" href="https://unpkg.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" media="print" onload="this.media='all'">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" media="print" onload="this.media='all'">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    
+    <!-- Defer Non-Critical JavaScript -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
+    <script src="./assets/js/script.js" defer></script>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                    
+                <span class="logo-text">VP</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#certifications">Certificates</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="nav-buttons">
+                <a href="./assets/resume/Vivek Resume updated.pdf" class="nav-resume-btn" download>
+                    <i class="fas fa-download"></i>
+                    <span>Resume</span>
+                </a>
+                <button class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content" data-aos="fade-up">
+            <h1>Hi, I'm <span class="highlight">Vivek Prajapati</span></h1>
+            <p class="typewriter">MSc IT Student | Software Developer</p>
+            <div class="cta-buttons" data-aos="fade-up" data-aos-delay="400">
+                <a href="#projects" class="cta-primary">View Projects</a>
+                <a href="./assets/resume/Vivek Resume updated.pdf" class="cta-secondary" download>
+                    <i class="fas fa-download"></i> Download Resume
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2 class="section-title" data-aos="fade-up">About Me</h2>
+        <div class="about-content">
+            <div class="about-image" data-aos="fade-right">
+                <img src="https://via.placeholder.com/300" alt="Profile Picture">
+            </div>
+            <div class="about-text" data-aos="fade-left">
+                <p>Seeking a Software Engineer role to leverage my academic background in technology, enhance my skills through real-world experience, and contribute to organizational success.</p>
+                <div class="key-points">
+                    <div class="point">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Strong enthusiasm for learning and quickly adapting to new tools and technologies</span>
+                    </div>
+                    <div class="point">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Excellent problem-solving abilities and a collaborative team player</span>
+                    </div>
+                    <div class="point">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Solid analytical thinking and proficient programming capabilities</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education">
+        <h2 class="section-title" data-aos="fade-up">Education Journey</h2>
+        <div class="education-grid">
+            <div class="education-cards-container">
+                <!-- MSCIT Card -->
+                <div class="education-card" data-aos="fade-up">
+                    <div class="edu-header">
+                        <span class="edu-year">2024 - 2026</span>
+                        <h3>MSc IT</h3>
+                    </div>
+                    <p class="university">Charotar University of Science and Technology (CHARUSAT)</p>
+                    <div class="edu-details">
+                        <p><strong>CGPA:</strong> 6.3</p>
+                        <p><strong>Program:</strong> Master of Science in Information Technology</p>
+                    </div>
+                </div>
+
+                <!-- BSC IT Card -->
+                <div class="education-card" data-aos="fade-up">
+                    <div class="edu-header">
+                        <span class="edu-year">2021 - 2024</span>
+                        <h3>BSc IT</h3>
+                    </div>
+                    <p class="university">Charotar University of Science and Technology (CHARUSAT)</p>
+                    <div class="edu-details">
+                        <p><strong>CGPA:</strong> 6.8</p>
+                        <p><strong>Program:</strong> Bachelor of Science in Information Technology</p>
+                    </div>
+                </div>
+
+                <!-- HSC Card -->
+                <div class="education-card" data-aos="fade-up">
+                    <div class="edu-header">
+                        <span class="edu-year">2020 - 2021</span>
+                        <h3>HSC Science</h3>
+                    </div>
+                    <p class="university">P. R. Mukhi Secondary and Higher Secondary</p>
+                    <div class="edu-details">
+                        <p><strong>Percentage:</strong> 71.38%</p>
+                        <p><strong>Stream:</strong> Science</p>
+                    </div>
+                </div>
+
+                <!-- SSC Card -->
+                <div class="education-card" data-aos="fade-up">
+                    <div class="edu-header">
+                        <span class="edu-year">2019</span>
+                        <h3>SSC</h3>
+                    </div>
+                    <p class="university">Shree Saraswati Mandir</p>
+                    <div class="edu-details">
+                        <p><strong>Percentage:</strong> 69.5%</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+        <h2 class="section-title" data-aos="fade-up">Technical Skills</h2>
+        <div class="skills-container">
+            <div class="skills-row">
+                <!-- Programming Languages -->
+                <div class="skill-category programming-category" data-aos="fade-up">
+                    <div class="skill-header">
+                        <div class="skill-header-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3>Programming</h3>
+                    </div>
+                    <ul class="skills-list">
+                        <li class="skill-item">
+                            <i class="fab fa-cuttlefish"></i>
+                            <span>C</span>
+                        </li>
+                        <li class="skill-item">
+                            <i class="fab fa-cuttlefish"></i>
+                            <span>C++</span>
+                        </li>
+                        <li class="skill-item">
+                            <i class="fab fa-java"></i>
+                            <span>Java</span>
+                        </li>
+                        <li class="skill-item">
+                            <i class="fab fa-python"></i>
+                            <span>Python</span>
+                        </li>
+                        <li class="skill-item">
+                            <i class="fab fa-php"></i>
+                            <span>PHP</span>
+                        </li>
+                        <li class="skill-item">
+                            <i class="fas fa-terminal"></i>
+                            <span>Shell</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Web Technologies -->
+                <div class="skill-category web-category" data-aos="fade-up">
+                    <div class="skill-header">
+                        <div class="skill-header-icon">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <h3>Web Tech</h3>
+                    </div>
+                    <ul class="skills-list">
+                        <li class="skill-item">
+                            <i class="fab fa-html5"></i>
+                            <span>HTML5</span>
+                        </li>
+                        <li class="skill-item">
+                            <i class="fab fa-css3-alt"></i>
+                            <span>CSS3</span>
+                        </li>
+                        <li class="skill-item">
+                            <i class="fab fa-js"></i>
+                            <span>JavaScript</span>
+                        </li>
+                        <li class="skill-item">
+                            <i class="fab fa-bootstrap"></i>
+                            <span>Bootstrap</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Frameworks -->
+                <div class="skill-category framework-category" data-aos="fade-up">
+                    <div class="skill-header">
+                        <div class="skill-header-icon">
+                            <i class="fas fa-layer-group"></i>
+                        </div>
+                        <h3>Frameworks</h3>
+                    </div>
+                    <ul class="skills-list">
+                        <li class="skill-item">
+                            <i class="fab fa-angular"></i>
+                            <span>Angular</span>
+                        </li>
+                        <li class="skill-item">
+                            <i class="fab fa-node-js"></i>
+                            <span>Node.js</span>
+                        </li>
+                        <li class="skill-item">
+                            <i class="fas fa-server"></i>
+                            <span>Express</span>
+                        </li>
+                        <li class="skill-item">
+                            <i class="fab fa-python"></i>
+                            <span>Django</span>
+                        </li>
+                        <li class="skill-item">
+                            <i class="fab fa-windows"></i>
+                            <span>ASP.NET</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Databases -->
+                <div class="skill-category database-category" data-aos="fade-up">
+                    <div class="skill-header">
+                        <div class="skill-header-icon">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <h3>Databases</h3>
+                    </div>
+                    <ul class="skills-list">
+                        <li class="skill-item">
+                            <i class="fas fa-database"></i>
+                            <span>MySQL</span>
+                        </li>
+                        <li class="skill-item">
+                            <i class="fas fa-leaf"></i>
+                            <span>MongoDB</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Tools/IDEs -->
+                <div class="skill-category tools-category" data-aos="fade-up">
+                    <div class="skill-header">
+                        <div class="skill-header-icon">
+                            <i class="fas fa-tools"></i>
+                        </div>
+                        <h3>Tools</h3>
+                    </div>
+                    <ul class="skills-list">
+                        <li class="skill-item">
+                            <i class="fas fa-code"></i>
+                            <span>VS Code</span>
+                        </li>
+                        <li class="skill-item">
+                            <i class="fas fa-coffee"></i>
+                            <span>NetBeans</span>
+                        </li>
+                        <li class="skill-item">
+                            <i class="fas fa-plus-square"></i>
+                            <span>Dev C++</span>
+                        </li>
+                        <li class="skill-item">
+                            <i class="fas fa-edit"></i>
+                            <span>Sublime</span>
+                        </li>
+                        
+                    </ul>
+                </div>
+
+                <!-- Concepts -->
+                <div class="skill-category concepts-category" data-aos="fade-up">
+                    <div class="skill-header">
+                        <div class="skill-header-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <h3>Concepts</h3>
+                    </div>
+                    <ul class="skills-list">
+                        <li class="skill-item">
+                            <i class="fas fa-cube"></i>
+                            <span>OOP</span>
+                        </li>
+                        <li class="skill-item">
+                            <i class="fas fa-project-diagram"></i>
+                            <span>DSA</span>
+                        </li>
+                        <li class="skill-item">
+                            <i class="fas fa-database"></i>
+                            <span>DBMS</span>
+                        </li>
+                        <li class="skill-item">
+                            <i class="fas fa-desktop"></i>
+                            <span>OS</span>
+                        </li>
+                        <li class="skill-item">
+                            <i class="fas fa-network-wired"></i>
+                            <span>Network</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <h2 class="section-title" data-aos="fade-up">Projects</h2>
+        <div class="projects-grid">
+            <!-- Hotel Management Project -->
+            <div class="project-card" data-aos="fade-up">
+                <div class="project-content">
+                    <h3>Hotel Management System</h3>
+                    <p class="project-description">A comprehensive hotel management system built using modern web technologies.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CSS</span>
+                        <span class="tech-tag">Angular.js</span>
+                        <span class="tech-tag">Express.js</span>
+                        <span class="tech-tag">Node.js</span>
+                        <span class="tech-tag">MongoDB</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hostel Management Project -->
+            <div class="project-card" data-aos="fade-up">
+                <div class="project-content">
+                    <h3>Hostel Management System</h3>
+                    <p class="project-description">A web-based hostel management system for efficient administration.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CSS</span>
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">PHP</span>
+                        <span class="tech-tag">MySQL</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 360 Virtual Tour Project -->
+            <div class="project-card" data-aos="fade-up">
+                <div class="project-content">
+                    <h3>360 Virtual Tour</h3>
+                    <p class="project-description">An immersive virtual tour application developed during BSc(IT).</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">C#</span>
+                        <span class="tech-tag">.NET</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- GYM Management Project -->
+            <div class="project-card" data-aos="fade-up">
+                <div class="project-content">
+                    <h3>GYM Management System</h3>
+                    <p class="project-description">A comprehensive gym management solution built with .NET technologies.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">C#</span>
+                        <span class="tech-tag">.NET</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="certifications">
+        <h2 class="section-title" data-aos="fade-up">Certifications</h2>
+        <div class="certifications-grid">
+            <div class="certification-card" data-aos="fade-up">
+                <div class="certification-icon">
+                    <i class="fab fa-python"></i>
+                </div>
+                <div class="certification-content">
+                    <h3>Python Course</h3>
+                    <p class="cert-issuer">Udemy</p>
+                </div>
+            </div>
+
+            <div class="certification-card" data-aos="fade-up">
+                <div class="certification-icon">
+                    <i class="fab fa-python"></i>
+                </div>
+                <div class="certification-content">
+                    <h3>Python with Django</h3>
+                    <p class="cert-issuer">Brainy Beam</p>
+                    <p class="cert-detail">7 Day Internship Program</p>
+                </div>
+            </div>
+
+            <div class="certification-card" data-aos="fade-up">
+                <div class="certification-icon">
+                    <i class="fab fa-java"></i>
+                </div>
+                <div class="certification-content">
+                    <h3>Advanced Java</h3>
+                    <p class="cert-issuer">Great Learning</p>
+                    <p class="cert-detail">JDBC, Collections and Multithreading</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2 class="section-title" data-aos="fade-up">Get in Touch</h2>
+        <div class="contact-container">
+            <div class="contact-info" data-aos="fade-up">
+                <div class="contact-card">
+                    <div class="contact-header">
+                        <i class="fas fa-envelope"></i>
+                        <h3>Email</h3>
+                    </div>
+                    <p>vivekprajapati2004@gmail.com</p>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-header">
+                        <i class="fas fa-phone"></i>
+                        <h3>Phone</h3>
+                    </div>
+                    <p>+91 9723928921</p>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-header">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h3>Location</h3>
+                    </div>
+                    <p>Kathlal, Gujarat, India - 387630</p>
+                </div>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/vivek-prajapati-438932231?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="social-link">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    
+</body>
+</html> 
